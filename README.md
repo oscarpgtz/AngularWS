@@ -1,6 +1,14 @@
 # AngularWS
 Angular workshop NS
 
+Simple angular application that includes the basics:
+- Routes
+- Controllers
+- Services
+- Interceptors
+- Filters
+- Directives
+
 
 #Project
 - Pokedex 
