@@ -1,0 +1,6 @@
+<h3>{{vm.pokemon.name | uppercase}}</h3>
+<img ng-src="http://img.pokemondb.net/artwork/{{vm.pokemon.name}}.jpg"/>
+<div>
+    <h4>Types:</h4>
+    <pokemon-type ng-repeat="wrapper in vm.pokemon.types" type-name="wrapper.type.name"></pokemon-type>
+</div>

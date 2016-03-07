@@ -1,0 +1,18 @@
+<input type="text" placeholder="Enter pokemon name" ng-model="vm.search">
+<br/>
+<table>
+    <thead>
+    <tr>
+        <td><strong>Pokemon Name</strong></td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="pokemon in vm.pokemons | filter: {name: vm.search}">
+        <td>
+            <a ng-href="#/pokemon/{{vm.getId(pokemon)}}">
+                {{pokemon.name | capitalize}}
+            </a>
+        </td>
+    </tr>
+    </tbody>
+</table>
